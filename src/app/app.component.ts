@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   modalVisible = false;
+  videoSrc = '';
 
   constructor() {
     console.log('this.modalVisible', this.modalVisible);
@@ -19,5 +20,6 @@ export class AppComponent implements OnInit {
   loadVideo(event) {
     console.log('app Component loadVideo', event);
     this.modalVisible = true;
+    this.videoSrc = event;
   }
 }

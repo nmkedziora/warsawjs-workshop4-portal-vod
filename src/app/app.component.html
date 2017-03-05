@@ -1,6 +1,6 @@
 <app-header></app-header>
 <app-modal [visible]="modalVisible">
-  <h5>dziala!</h5>
+  <video *ngIf="videoSrc" [src]="videoSrc" width="800" autoplay controls></video>
 </app-modal>
 <app-videos-list (openVideo)="loadVideo($event)"></app-videos-list>
 <app-footer></app-footer>
