@@ -1,3 +1,6 @@
 <app-header></app-header>
+<app-modal [visible]="modalVisible">
+  <h5>dziala!</h5>
+</app-modal>
 <app-videos-list (openVideo)="loadVideo($event)"></app-videos-list>
 <app-footer></app-footer>

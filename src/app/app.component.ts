@@ -1,14 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit {
+  modalVisible = false;
+
+  constructor() {
+    console.log('this.modalVisible', this.modalVisible);
+  }
+
+  ngOnInit() {
+    console.log('this.modalVisible', this.modalVisible);
+  }
 
   loadVideo(event) {
     console.log('app Component loadVideo', event);
+    this.modalVisible = true;
   }
 }
