@@ -9,13 +9,17 @@ import { LogoComponent } from './logo/logo.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { VideoService } from './video.service';
+import { VideosListComponent } from './videos-list/videos-list.component';
+import { VideoItemComponent } from './video-item/video-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoComponent,
-    FooterComponent
+    FooterComponent,
+    VideosListComponent,
+    VideoItemComponent
   ],
   imports: [
     BrowserModule,

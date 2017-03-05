@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  loadVideo(event) {
+    console.log('app Component loadVideo', event);
+  }
 }

@@ -1,0 +1,15 @@
+article {
+  display: inline-block;
+  border: 1px solid #999;
+  margin: 15px;
+  padding: 15px;
+  max-width: 500px;
+}
+
+div {
+  text-align: center;
+}
+
+.aaa {
+  background-color: red;
+}

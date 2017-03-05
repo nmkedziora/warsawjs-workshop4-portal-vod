@@ -1,0 +1,2 @@
+<!-- {{videosList.videos | json}} -->
+<app-video-item *ngFor="let item of videosList.videos" [video]="item" (watchVideo)="onWatchVideo($event)"></app-video-item>
